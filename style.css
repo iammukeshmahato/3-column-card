@@ -2,123 +2,138 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 
 :root {
-  --Bright_orange: hsl(31, 77%, 52%);
-  --Dark_cyan: hsl(184, 100%, 22%);
-  --VeryDark_cyan: hsl(179, 100%, 13%);
-  --Transparent_white: hsla(0, 0%, 100%, 0.75);
-  --Verylightgray: hsl(0, 0%, 95%);
+   --Bright_orange: hsl(31, 77%, 52%);
+   --Dark_cyan: hsl(184, 100%, 22%);
+   --VeryDark_cyan: hsl(179, 100%, 13%);
+   --Transparent_white: hsla(0, 0%, 93.5%, 0.75);
+   --Verylightgray: hsl(0, 0%, 95%);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-  color: var(--Verylightgray);
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+   color: var(--Transparent_white);
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: "Lexend Deca", sans-serif;
+   background-color: var(--Transparent_white);
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* flex-wrap: wrap; */
-  /* position: relative; */
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   font-family: "Lexend Deca", sans-serif;
+}
+
+.card {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 42px;
 }
 
 .sec {
-  padding: 45px;
-  padding-bottom: 55px;
-  width: 300px;
+   padding: 48px 48px 62px 48px;
+   width: 306px;
 }
 
 .sec1 {
-  background-color: var(--Bright_orange);
-  border-radius: 10px 0 0 10px;
+   background-color: var(--Bright_orange);
+   border-radius: 10px 0 0 10px;
 }
 
 .sec2 {
-  background-color: var(--Dark_cyan);
+   background-color: var(--Dark_cyan);
 }
 
 .sec3 {
-  border-radius: 0 10px 10px 0;
-  background-color: var(--VeryDark_cyan);
+   border-radius: 0 10px 10px 0;
+   background-color: var(--VeryDark_cyan);
 }
 
-.main h1 {
-  font-size: 40px;
-  padding: 30px 0;
-  font-family: "Big Shoulders Display", cursive;
-  text-transform: uppercase;
+.card h1 {
+   /* border: 1px solid red; */
+   font-size: 38px;
+   padding: 32px 0 26px;
+   font-family: "Big Shoulders Display", cursive;
+   text-transform: uppercase;
+   color: var(--Verylightgray);
 }
 
 .description {
-  word-wrap:normal;
-  margin-bottom: 100px;
-    line-height: 25px;
-    color: var(--Transparent_white);
-    font-size: 15px;
+   word-wrap: normal;
+   margin-bottom: 96px;
+   line-height: 25px;
+   color: var(--Transparent_white);
+   font-family: "Lexend Deca", sans-serif;
+   font-size: 15px;
+   /* font-weight: 400; */
 }
 
-.main .btn {
-  border: 2px solid var(--Verylightgray);
-  border-radius: 30px;
-  padding: 12px 25px;
-  background-color: var(--Verylightgray);
-  transition: 0.3s all;
+.card .btn {
+   border: 2px solid var(--Verylightgray);
+   border-radius: 30px;
+   padding: 12px 25px;
+   background-color: var(--Verylightgray);
+   transition: 0.3s all;
 }
 
-.main .btn:hover {
-  background-color: transparent;
-  color: var(--Verylightgray);
+.card .btn:hover {
+   background-color: transparent;
+   color: var(--Verylightgray);
 }
 
 .sec1Btn {
-  color: var(--Bright_orange);
+   color: var(--Bright_orange);
 }
 
 .sec2Btn {
-  color: var(--Dark_cyan);
+   color: var(--Dark_cyan);
 }
 
 .sec3Btn {
-  color: var(--VeryDark_cyan);
+   color: var(--VeryDark_cyan);
 }
 
 @media (max-width: 900px) {
-  .sec {
-    width: 270px;
-    padding: 41px;
-  }
-
+   .sec {
+      width: 270px;
+      padding: 41px;
+   }
 }
 
 @media (max-width: 770px) {
-  .main{
-    flex-direction: column;
-    margin: 10vw auto;
-  }
-  .sec {
-    width: 400px;
-  }
-  .sec1 {
-    border-radius: 10px 5px 0 0;
-  }
-  .sec3 {
-    border-radius: 0 0 10px 10px;
-  }
+   .card {
+      flex-direction: column;
+      margin: 10vw auto;
+   }
+   .sec {
+      width: 400px;
+   }
+   .sec1 {
+      border-radius: 10px 5px 0 0;
+   }
+   .sec3 {
+      border-radius: 0 0 10px 10px;
+   }
 }
 
 @media (max-width: 375px) {
-  .sec {
-    width: 280px;
-  }
+   .sec {
+      width: 280px;
+   }
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+   color: black;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
 }
